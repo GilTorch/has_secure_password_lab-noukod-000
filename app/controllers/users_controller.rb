@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
     @user=User.create(users_params)
 
-    redirect_to :sessions => 'sessions', :action => 'create'
+    redirect_to :sessions => 'sessions', :action => 'create',name:@user.name
 
   end
 
