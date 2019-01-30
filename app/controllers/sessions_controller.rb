@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    puts "SESSION CREATE ACTION!"
     puts params.inspect
     @user=User.find_by(name:params[:user][:name])
 
