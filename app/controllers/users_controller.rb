@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   def create
 
     @user=User.create(users_params)
-    puts @user.inspect
 
   end
 
